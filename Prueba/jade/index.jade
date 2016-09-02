@@ -1,0 +1,402 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    title RISE-Multipurpose Html Template
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    // Bootstrap Css
+    link(href='bootstrap-assets/css/bootstrap.min.css', rel='stylesheet')
+    // Style
+    link(href='plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
+    link(href='plugins/owl-carousel/owl.theme.css', rel='stylesheet')
+    link(href='plugins/owl-carousel/owl.transitions.css', rel='stylesheet')
+    link(href='plugins/Lightbox/dist/css/lightbox.css', rel='stylesheet')
+    link(href='plugins/icons/style.css', rel='stylesheet')
+    link(href='plugins/animate/animate.css', rel='stylesheet')
+    link(href='css/main.css', rel='stylesheet')
+    // Icons Font
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    //
+      Preloader
+      =============================================
+    .preloader
+      i.fa.fa-circle-o-notch.fa-spin.fa-2x
+    //
+      Header
+      =============================================
+    section.main-header
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              img.img-responsive(src='img/logo/lo.png', alt='logo')
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse.text-center
+            .col-md-8.col-xs-12.nav-wrap
+              ul.nav.navbar-nav
+                li
+                  a.page-scroll(href='#owl-hero') Home
+                li
+                  a.page-scroll(href='#services') Services
+                li
+                  a.page-scroll(href='#portfolio') Works
+                li
+                  a.page-scroll(href='#team') About
+                li
+                  a.page-scroll(href='#contact') Contact
+            .social-media.hidden-sm.hidden-xs
+              ul.nav.navbar-nav
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-dribbble
+      #owl-hero.owl-carousel.owl-theme
+        .item(style='background-image: url(img/sliders/Slide.jpg)')
+          .caption
+            h6 Branding / Design / Creativty
+            h1
+              | We Are 
+              span Rise
+            a.btn.btn-transparent(href='#') Learn More
+            a.btn.btn-light(href='#') Buy Now
+        .item(style='background-image: url(img/sliders/Slide2.jpg)')
+          .caption
+            h6 Branding / Design / Creativty
+            h1
+              | Creative 
+              span Design
+            a.btn.btn-transparent(href='#') Learn More
+            a.btn.btn-light(href='#') Buy Now
+        .item(style='background-image: url(img/sliders/Slide3.jpg)')
+          .caption
+            h6 Branding / Design / Creativty
+            h1
+              | Clean 
+              span Code
+            a.btn.btn-transparent(href='#') Learn More
+            a.btn.btn-light(href='#') Buy Now
+    //
+      Welcome
+      =============================================
+    section#welcome
+      .container
+        h2
+          | Welcome To 
+          span Rise
+        hr.sep
+        p Make Yourself At Home Don't Be Shy
+        img.img-responsive.center-block.wow.fadeInUp(data-wow-delay='.3s', src='img/welcome/logo.png', alt='logo')
+    //
+      Services
+      =============================================
+    section#services
+      .container
+        h2 What We Do
+        hr.light-sep
+        p We Can Do Crazy Things
+        .services-box
+          .row.wow.fadeInUp(data-wow-delay='.3s')
+            .col-md-4
+              .media-left
+                span.icon-lightbulb
+              .media-body
+                h3 Creative Design
+                p
+                  | Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+            .col-md-4
+              .media-left
+                span.icon-mobile
+              .media-body
+                h3 Bootstrap
+                p
+                  | Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+            .col-md-4
+              .media-left
+                span.icon-compass
+              .media-body
+                h3 Sass & Compass
+                p
+                  | Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+            .row.wow.fadeInUp(data-wow-delay='.6s')
+              .col-md-4
+                .media-left
+                  span.icon-adjustments
+                .media-body
+                  h3 Easy To Customize
+                  p
+                    | Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+              .col-md-4
+                .media-left
+                  span.icon-tools
+                .media-body
+                  h3 Photoshop
+                  p
+                    | Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+              .col-md-4
+                .media-left
+                  span.icon-wallet
+                .media-body
+                  h3 Money Saver
+                  p
+                    | Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+    //
+      Portfolio
+      =============================================
+    section#portfolio
+      .container-fluid
+        h2 Our Work
+        hr.sep
+        p Showcase Your Amazing Work With Us
+        .row
+          .col-lg-4.col-sm-6.wow.fadeInUp(data-wow-delay='.3s')
+            a.portfolio-box(href='img/portfolio/1.jpg', data-lightbox='image-1', data-title='Your caption')
+              img.img-responsive(src='img/portfolio/1.jpg', alt='1')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Category
+                  .project-name
+                    | Project Name
+          .col-lg-4.col-sm-6.wow.fadeInUp(data-wow-delay='.3s')
+            a.portfolio-box(href='img/portfolio/2.jpg', data-lightbox='image-2', data-title='Your caption')
+              img.img-responsive(src='img/portfolio/2.jpg', alt='2')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Category
+                  .project-name
+                    | Project Name
+          .col-lg-4.col-sm-6.wow.fadeInUp(data-wow-delay='.3s')
+            a.portfolio-box(href='img/portfolio/3.jpg', data-lightbox='image-3', data-title='Your caption')
+              img.img-responsive(src='img/portfolio/3.jpg', alt='3')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Category
+                  .project-name
+                    | Project Name
+          .col-lg-4.col-sm-6.wow.fadeInUp(data-wow-delay='.3s')
+            a.portfolio-box(href='img/portfolio/4.jpg', data-lightbox='image-4', data-title='Your caption')
+              img.img-responsive(src='img/portfolio/4.jpg', alt='4')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Category
+                  .project-name
+                    | Project Name
+          .col-lg-4.col-sm-6.wow.fadeInUp(data-wow-delay='.3s')
+            a.portfolio-box(href='img/portfolio/5.jpg', data-lightbox='image-5', data-title='Your caption')
+              img.img-responsive(src='img/portfolio/5.jpg', alt='5')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Category
+                  .project-name
+                    | Project Name
+          .col-lg-4.col-sm-6.wow.fadeInUp(data-wow-delay='.3s')
+            a.portfolio-box(href='img/portfolio/6.jpg', data-lightbox='image-6', data-title='Your caption')
+              img.img-responsive(src='img/portfolio/6.jpg', alt='6')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Category
+                  .project-name
+                    | Project Name
+    //
+      Work Process
+      =============================================
+    section#work-process
+      .container
+        h2 Work Process
+        hr.sep
+        p What Happen In The Background
+        .row.wow.fadeInUp(data-wow-delay='.3s')
+          .col-lg-3
+            span.icon-chat
+            h4 1.Discuss
+          .col-lg-3
+            span.icon-circle-compass
+            h4 2.Sketch
+          .col-lg-3
+            span.icon-browser
+            h4 3.Make
+          .col-lg-3
+            span.icon-global
+            h4 4.Publish
+    //
+      Some Fune Facts
+      =============================================
+    section#fun-facts
+      .container
+        h2 Some Fun Facts 
+        hr.light-sep
+        p Fun Facts
+        .row.wow.fadeInUp(data-wow-delay='.3s')
+          .col-lg-3
+            span.icon-happy
+            h2.number.timer 367
+            h4 Happy Clients
+          .col-lg-3
+            span.icon-trophy
+            h2.number.timer 150
+            h4 Project Done
+          .col-lg-3
+            span.icon-wine
+            h2.number.timer 121
+            h4 Glass Of Wine
+          .col-lg-3
+            span.icon-documents
+            h2.number.timer 10000
+            h4 Lines Of Code
+    //
+      Some Fune Facts
+      =============================================
+    section#team
+      .container
+        h2 Our Team
+        hr.sep
+        p Designers Behind This Work
+        .row.wow.fadeInUp(data-wow-delay='.3s')
+          .col-md-4
+            .team
+              img.img-responsive.center-block(src='img/team/MariaDoe.jpg', alt='1')
+              h4 Maria Doe
+              p Designer
+              .team-social-icons
+                a(href='#')
+                  i.fa.fa-facebook
+                a(href='#')
+                  i.fa.fa-twitter
+                a(href='#')
+                  i.fa.fa-dribbble
+          .col-md-4
+            .team
+              img.img-responsive.center-block(src='img/team/JasonDoe.jpg', alt='2')
+              h4 Jason Doe
+              p Developer
+              .team-social-icons
+                a(href='#')
+                  i.fa.fa-facebook
+                a(href='#')
+                  i.fa.fa-twitter
+                a(href='#')
+                  i.fa.fa-dribbble
+          .col-md-4
+            .team
+              img.img-responsive.center-block(src='img/team/MikeDoe.jpg', alt='3')
+              h4 Mike Doe
+              p Photographer
+              .team-social-icons
+                a(href='#')
+                  i.fa.fa-facebook
+                a(href='#')
+                  i.fa.fa-twitter
+                a(href='#')
+                  i.fa.fa-dribbble
+    //
+      Testimonials
+      =============================================
+    section#testimonials
+      .container
+        h2 Testimonials
+        hr.light-sep
+        p What Clients Say About Us
+        #owl-testi.owl-carousel.owl-theme
+          .item
+            .quote
+              i.fa.fa-quote-left.left.fa-2x
+              h5
+                | I’am amazed, I should say thank you so much for your awesome template. Design is so 
+                | good and neat, every detail has been taken care these team are realy amazing and talented! I will 
+                | work only with 
+                span Rise
+                | .
+                i.fa.fa-quote-right.right.fa-2x
+          .item
+            .quote
+              i.fa.fa-quote-left.left.fa-2x
+              h5
+                | I’am amazed, I should say thank you so much for your awesome template. Design is so 
+                | good and neat, every detail has been taken care these team are realy amazing and talented! I will 
+                | work only with 
+                span Rise
+                | .
+                i.fa.fa-quote-right.right.fa-2x
+          .item
+            .quote
+              i.fa.fa-quote-left.left.fa-2x
+              h5
+                | I’am amazed, I should say thank you so much for your awesome template. Design is so 
+                | good and neat, every detail has been taken care these team are realy amazing and talented! I will 
+                | work only with 
+                span Rise
+                | .
+                i.fa.fa-quote-right.right.fa-2x
+    //
+      Contact Us
+      =============================================
+    section#contact
+      .container
+        h2 Contact Us
+        hr.sep
+        p Get In Touch
+        .col-md-6.col-md-offset-3.wow.fadeInUp(data-wow-delay='.3s')
+          form
+            .form-group
+              input#Name.form-control(type='text', placeholder='Name')
+            .form-group
+              input#Email.form-control(type='text', placeholder='Email')
+            .form-group
+              textarea.form-control(rows='3', placeholder='Message')
+            a.btn-block(href='#') Send
+    //
+      Google Map
+      =============================================
+    #map
+    //
+      Footer
+      =============================================
+    footer
+      .container
+        h1 Rise
+        .social
+          a(href='#')
+            i.fa.fa-facebook.fa-2x
+          a(href='#')
+            i.fa.fa-twitter.fa-2x
+          a(href='#')
+            i.fa.fa-dribbble.fa-2x
+        h6 © 2015 Rise.Development By BootstrapDev
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='bootstrap-assets/js/bootstrap.min.js')
+    script(src='js/custom.js')
+    // JS PLUGINS
+    script(src='plugins/owl-carousel/owl.carousel.min.js')
+    script(src='js/jquery.easing.min.js')
+    script(src='plugins/countTo/jquery.countTo.js')
+    script(src='plugins/inview/jquery.inview.min.js')
+    script(src='plugins/Lightbox/dist/js/lightbox.min.js')
+    script(src='plugins/wow/wow.min.js')
+    // GOOGLE MAP
+    script(src='https://maps.googleapis.com/maps/api/js')
